@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScadaFb", "ScadaFb\ScadaFb.csproj", "{7A09ABFA-A227-4E16-AC0A-FE8911D8A8CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterScadaBlocks", "ScadaFb\MasterScadaBlocks.csproj", "{7A09ABFA-A227-4E16-AC0A-FE8911D8A8CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowTest", "FlowTest\FlowTest.csproj", "{A15FD914-7365-408E-9EC1-6280379EC334}"
 EndProject

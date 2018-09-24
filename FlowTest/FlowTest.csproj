@@ -94,9 +94,9 @@
       <Project>{c6affb45-7d3b-4c5e-ba4a-01785312fb50}</Project>
       <Name>CommonClass</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ScadaFb\ScadaFb.csproj">
+    <ProjectReference Include="..\ScadaFb\MasterScadaBlocks.csproj">
       <Project>{7a09abfa-a227-4e16-ac0a-fe8911d8a8ca}</Project>
-      <Name>ScadaFb</Name>
+      <Name>MasterScadaBlocks</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
