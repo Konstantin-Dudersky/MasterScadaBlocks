@@ -47,6 +47,7 @@ namespace MasterScadaBlocks.Pie
             VisualPins.SetPinValue(Percent7Visual, GetPinValue<double>(Percent7));
             VisualPins.SetPinValue(Percent8Visual, GetPinValue<double>(Percent8));
             VisualPins.SetPinValue(Percent9Visual, GetPinValue<double>(Percent9));
+
         }
     }
 }
