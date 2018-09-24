@@ -12,12 +12,33 @@ namespace MasterScadaBlocks.DiffDateTimePicker
      DisplayName("DiffDateTimePicker")]
     public partial class DiffDateTimePickerWF : VisualControlBase
     {
+        #region Private Fields
+
         private DiffDateTimePickerWPF _controlWpf;
+
+        #endregion Private Fields
+
+        #region Public Constructors
 
         public DiffDateTimePickerWF()
         {
             InitializeComponent();
         }
+
+        #endregion Public Constructors
+
+
+
+        #region Protected Methods
+
+        protected override void ToRuntime()
+        {
+            _controlWpf.OnCheckboxChanged(true);
+        }
+
+        #endregion Protected Methods
+
+        #region Private Methods
 
         private void _controlWpf_CheckboxChanged(object sender, ChangedEventArgs e)
         {
@@ -39,5 +60,7 @@ namespace MasterScadaBlocks.DiffDateTimePicker
 
             _controlWpf.CheckboxChanged += _controlWpf_CheckboxChanged;
         }
+
+        #endregion Private Methods
     }
 }

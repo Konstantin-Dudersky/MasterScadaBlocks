@@ -15,38 +15,77 @@ namespace MasterScadaBlocks.DiffFromArchive
     DisplayName("Разница из архива")]
     public class DiffFromArchive : StaticFBBase
     {
-        private const int PinBeginDateTime = 3;
-        private const int PinCalculate = 1;
-        private const int PinEndDateTime = 4;
-        private const int PinTag = 2;
-        private const int PoutCaclulatedDiff = 5;
+        #region Private Fields
 
-        protected override void UpdateData()
+        private const int PinBeginDateTime = 91;
+        private const int PinEndDateTime = 92;
+        private const int PinTag_1 = 1;
+        private const int PoutCaclulatedDiff_1 = 101;
+
+        #endregion Private Fields
+
+        #region Public Constructors
+
+        public DiffFromArchive()
         {
-            bool? calculateOld = false;
+        }
 
-            if (
-                //GetPinBool(PinCalculate) == true &&
-                //calculateOld == false &&
-                IsValueExist(PinBeginDateTime) &&
-                IsValueExist(PinEndDateTime) &&
-                GetPinDateTime(PinEndDateTime) > GetPinDateTime(PinBeginDateTime))
+        #endregion Public Constructors
+
+
+
+        #region Protected Methods
+
+        protected override void ToRuntime()
+        {
+            PinChanged += DiffFromArchive_PinChanged;
+        }
+
+        #endregion Protected Methods
+
+        #region Private Methods
+
+        private void CalculateDiff(int pinBeginDateTime, int pinEndDateTime, int pinTag, int poutCaclulatedDiff)
+        {
+            if (IsValueExist(pinTag) &&
+                IsValueExist(pinBeginDateTime) && 
+                IsValueExist(pinEndDateTime) && 
+                GetPinDateTime(pinEndDateTime) > GetPinDateTime(pinBeginDateTime))
             {
-                MasterSCADA.Hlp.ITreePinHlp elem = PinByID(PinTag).TreePinHlp.FirstConnectedItem;
-                MasterSCADA.Hlp.Archive.PinDataArchiveHlp k = elem.DataArchiveItem;
+                DateTime EndTime = GetPinDateTime(pinEndDateTime).ToUniversalTime();
+                DateTime StartTime = GetPinDateTime(pinBeginDateTime).ToUniversalTime();
 
-                DateTime EndTime = GetPinDateTime(PinEndDateTime).ToUniversalTime();
-                DateTime StartTime = GetPinDateTime(PinBeginDateTime).ToUniversalTime();
-                MasterSCADA.Hlp.PinValue[] mas = k.Read(StartTime, EndTime, false);
-
-                IEnumerable<object> query = from x in mas
+                IEnumerable<object> query = from x in PinByID(pinTag).TreePinHlp.FirstConnectedItem.DataArchiveItem.Read(StartTime, EndTime, false)
                                             where x.Quality.IsGood
                                             select x.Value;
 
-                SetPinValue(PoutCaclulatedDiff, (double)query.Last() - (double)query.First());
+                if (query.Count() >= 2)
+                {
+                    SetPinValue(poutCaclulatedDiff, (double)query.Last() - (double)query.First());
+                }
+                else
+                {
+                    SetPinValue(poutCaclulatedDiff, 0);
+                }
+            }
+        }
+
+        private void DiffFromArchive_PinChanged(int pinID)
+        {
+            if (_designMode)
+            {
+                return;
             }
 
-            calculateOld = GetPinBool(PinCalculate);
+            if (pinID == PinBeginDateTime)
+            {
+                for (int i = 1; i < 31; i++)
+                {
+                    CalculateDiff(PinBeginDateTime, PinEndDateTime, i, 100 + 1);
+                }
+            }
         }
+
+        #endregion Private Methods
     }
 }

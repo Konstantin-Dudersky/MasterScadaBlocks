@@ -2,11 +2,69 @@
 <FBConfig>
   <Map>
     <Items>
-      <Pin ID="1" Name="Calculate" Type="System.Boolean" />
-      <Pin ID="2" Name="Tag" Type="Вещественный" />
-      <Pin ID="3" Name="BeginDateTime" Type="Время" />
-      <Pin ID="4" Name="EndDateTime" Type="Время" />
-      <Pin ID="5" Name="CaclulatedDiff" Type="Вещественный" />
+    
+      <Pin ID="91" Name="BeginDateTime" Type="Время" />
+      <Pin ID="92" Name="EndDateTime" Type="Время" />
+      <Pin ID="1" Name="Tag_1" Type="System.Double" />
+      <Pin ID="2" Name="Tag_2" Type="System.Double" />
+      <Pin ID="3" Name="Tag_3" Type="System.Double" />
+      <Pin ID="4" Name="Tag_4" Type="System.Double" />
+      <Pin ID="5" Name="Tag_5" Type="System.Double" />
+      <Pin ID="6" Name="Tag_6" Type="System.Double" />
+      <Pin ID="7" Name="Tag_7" Type="System.Double" />
+      <Pin ID="8" Name="Tag_8" Type="System.Double" />
+      <Pin ID="9" Name="Tag_9" Type="System.Double" />
+      <Pin ID="10" Name="Tag_10" Type="System.Double" />
+      <Pin ID="11" Name="Tag_11" Type="System.Double" />
+      <Pin ID="12" Name="Tag_12" Type="System.Double" />
+      <Pin ID="13" Name="Tag_13" Type="System.Double" />
+      <Pin ID="14" Name="Tag_14" Type="System.Double" />
+      <Pin ID="15" Name="Tag_15" Type="System.Double" />
+      <Pin ID="16" Name="Tag_16" Type="System.Double" />
+      <Pin ID="17" Name="Tag_17" Type="System.Double" />
+      <Pin ID="18" Name="Tag_18" Type="System.Double" />
+      <Pin ID="19" Name="Tag_19" Type="System.Double" />
+      <Pin ID="20" Name="Tag_20" Type="System.Double" />
+      <Pin ID="21" Name="Tag_21" Type="System.Double" />
+      <Pin ID="22" Name="Tag_22" Type="System.Double" />
+      <Pin ID="23" Name="Tag_23" Type="System.Double" />
+      <Pin ID="24" Name="Tag_24" Type="System.Double" />
+      <Pin ID="25" Name="Tag_25" Type="System.Double" />
+      <Pin ID="26" Name="Tag_26" Type="System.Double" />
+      <Pin ID="27" Name="Tag_27" Type="System.Double" />
+      <Pin ID="28" Name="Tag_28" Type="System.Double" />
+      <Pin ID="29" Name="Tag_29" Type="System.Double" />
+      <Pin ID="30" Name="Tag_30" Type="System.Double" />
+      <Pout ID="101" Name="CaclulatedDiff_1" Type="System.Double" />
+      <Pout ID="102" Name="CaclulatedDiff_2" Type="System.Double" />
+      <Pout ID="103" Name="CaclulatedDiff_3" Type="System.Double" />
+      <Pout ID="104" Name="CaclulatedDiff_4" Type="System.Double" />
+      <Pout ID="105" Name="CaclulatedDiff_5" Type="System.Double" />
+      <Pout ID="106" Name="CaclulatedDiff_6" Type="System.Double" />
+      <Pout ID="107" Name="CaclulatedDiff_7" Type="System.Double" />
+      <Pout ID="108" Name="CaclulatedDiff_8" Type="System.Double" />
+      <Pout ID="109" Name="CaclulatedDiff_9" Type="System.Double" />
+      <Pout ID="110" Name="CaclulatedDiff_10" Type="System.Double" />
+      <Pout ID="111" Name="CaclulatedDiff_11" Type="System.Double" />
+      <Pout ID="112" Name="CaclulatedDiff_12" Type="System.Double" />
+      <Pout ID="113" Name="CaclulatedDiff_13" Type="System.Double" />
+      <Pout ID="114" Name="CaclulatedDiff_14" Type="System.Double" />
+      <Pout ID="115" Name="CaclulatedDiff_15" Type="System.Double" />
+      <Pout ID="116" Name="CaclulatedDiff_16" Type="System.Double" />
+      <Pout ID="117" Name="CaclulatedDiff_17" Type="System.Double" />
+      <Pout ID="118" Name="CaclulatedDiff_18" Type="System.Double" />
+      <Pout ID="119" Name="CaclulatedDiff_19" Type="System.Double" />
+      <Pout ID="120" Name="CaclulatedDiff_20" Type="System.Double" />
+      <Pout ID="121" Name="CaclulatedDiff_21" Type="System.Double" />
+      <Pout ID="122" Name="CaclulatedDiff_22" Type="System.Double" />
+      <Pout ID="123" Name="CaclulatedDiff_23" Type="System.Double" />
+      <Pout ID="124" Name="CaclulatedDiff_24" Type="System.Double" />
+      <Pout ID="125" Name="CaclulatedDiff_25" Type="System.Double" />
+      <Pout ID="126" Name="CaclulatedDiff_26" Type="System.Double" />
+      <Pout ID="127" Name="CaclulatedDiff_27" Type="System.Double" />
+      <Pout ID="128" Name="CaclulatedDiff_28" Type="System.Double" />
+      <Pout ID="129" Name="CaclulatedDiff_29" Type="System.Double" />
+      <Pout ID="130" Name="CaclulatedDiff_30" Type="System.Double" />
     </Items>
   </Map>
 </FBConfig>

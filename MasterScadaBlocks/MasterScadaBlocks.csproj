@@ -22,6 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RegisterForComInterop>true</RegisterForComInterop>
+    <CodeAnalysisRuleSet>MasterScadaBlocks.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MasterScadaBlocks.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FB, Version=3.9.0.4402, Culture=neutral, processorArchitecture=MSIL">
@@ -189,6 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DiffDateTimePicker\DiffDateTimePicker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MasterScadaBlocks.ruleset" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

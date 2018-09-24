@@ -26,6 +26,12 @@ namespace MasterScadaBlocks.DiffDateTimePicker
             VisualPins.PinChanged += VisualPins_PinChanged;
         }
 
+        protected override void ToRuntime()
+        {
+            SetPinValue(PoutBeginTime, DateTime.Now.AddDays(-1));
+            SetPinValue(PoutEndTime, DateTime.Now);
+        }
+
         private void VisualPins_PinChanged(int pinID)
         {
             SetPinValue(PoutBeginTime, VisualPins.GetPinValue<DateTime>(PinBeginTimeVFB));

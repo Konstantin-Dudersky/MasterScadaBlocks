@@ -12,6 +12,7 @@ namespace MasterScadaBlocks.DiffDateTimePicker
         private readonly DateTime endTime;
         private readonly bool lastDay;
 
+
         public ChangedEventArgs(bool ld, DateTime bt, DateTime et)
         {
             lastDay = ld;
@@ -31,6 +32,7 @@ namespace MasterScadaBlocks.DiffDateTimePicker
     public partial class DiffDateTimePickerWPF : UserControl
     {
         private DispatcherTimer timer = null;
+        Random random = new Random();
 
         public DiffDateTimePickerWPF()
         {
@@ -48,7 +50,7 @@ namespace MasterScadaBlocks.DiffDateTimePicker
 
         public event EventHandler<ChangedEventArgs> CheckboxChanged;
 
-        protected virtual void OnCheckboxChanged(bool lastDay)
+        public virtual void OnCheckboxChanged(bool lastDay)
         {
             DateTime beginTime, endTime;
 
@@ -106,7 +108,7 @@ namespace MasterScadaBlocks.DiffDateTimePicker
                         Convert.ToInt32(BeginDay.Text),
                         Convert.ToInt32(BeginHour.Text),
                         Convert.ToInt32(BeginMinute.Text),
-                    0);
+                        random.Next(60));
                     endTime = new DateTime(
                         Convert.ToInt32(EndYear.Text),
                         Convert.ToInt32(EndMonth.Text),
