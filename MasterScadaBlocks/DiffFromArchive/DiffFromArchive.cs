@@ -12,8 +12,7 @@ namespace MasterScadaBlocks.DiffFromArchive
     ComVisible(true),
     Guid("469E2E53-A5DB-4B9A-A7B0-FC5F176BCFEF"),
     CatID(CatIDs.CATID_OTHER),
-    DisplayName("Разница из архива"),
-    FBOptions(FBOptions.UseScanByTime)]
+    DisplayName("Разница из архива")]
     public class DiffFromArchive : StaticFBBase
     {
         private const int PinBeginDateTime = 3;
@@ -26,8 +25,9 @@ namespace MasterScadaBlocks.DiffFromArchive
         {
             bool? calculateOld = false;
 
-            if (GetPinBool(PinCalculate) == true &&
-                calculateOld == false &&
+            if (
+                //GetPinBool(PinCalculate) == true &&
+                //calculateOld == false &&
                 IsValueExist(PinBeginDateTime) &&
                 IsValueExist(PinEndDateTime) &&
                 GetPinDateTime(PinEndDateTime) > GetPinDateTime(PinBeginDateTime))

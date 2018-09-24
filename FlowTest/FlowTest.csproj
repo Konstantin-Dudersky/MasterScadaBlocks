@@ -94,7 +94,7 @@
       <Project>{c6affb45-7d3b-4c5e-ba4a-01785312fb50}</Project>
       <Name>CommonClass</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ScadaFb\MasterScadaBlocks.csproj">
+    <ProjectReference Include="..\MasterScadaBlocks\MasterScadaBlocks.csproj">
       <Project>{7a09abfa-a227-4e16-ac0a-fe8911d8a8ca}</Project>
       <Name>MasterScadaBlocks</Name>
     </ProjectReference>

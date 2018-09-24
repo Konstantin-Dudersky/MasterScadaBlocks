@@ -5,11 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MasterScadaBlocks.DiffDateTimePicker"
              mc:Ignorable="d" 
-             d:DesignHeight="100" d:DesignWidth="400">
+             d:DesignHeight="100" d:DesignWidth="400" Width="400" Height="100">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="25"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -42,7 +42,7 @@
             <Label Content="." RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Center"/>
             <Label Content="." RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1"/>
             <Label Content="." RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="4" HorizontalAlignment="Center"/>
-            <TextBox x:Name="EndMonth" Grid.Column="3" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,-1" Grid.Row="1" KeyDown="EndMonth_KeyDown"/>
+            <TextBox x:Name="EndMonth" Grid.Column="3" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" KeyDown="EndMonth_KeyDown"/>
             <Label Content="." RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="4" HorizontalAlignment="Center" Grid.Row="1"/>
             <TextBox x:Name="BeginDay" Grid.Column="5" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" KeyDown="BeginDay_KeyDown"/>
             <TextBox x:Name="EndDay" Grid.Column="5" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" KeyDown="EndDay_KeyDown"/>

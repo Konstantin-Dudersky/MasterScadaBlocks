@@ -38,7 +38,7 @@ namespace MasterScadaBlocks.DiffDateTimePicker
 
             timer = new DispatcherTimer
             {
-                Interval = new TimeSpan(0, 0, 0, 2, 0),
+                Interval = new TimeSpan(0, 0, 0, 10, 0),
             };
             timer.Tick += Timer_Tick;
 
@@ -101,12 +101,12 @@ namespace MasterScadaBlocks.DiffDateTimePicker
                 try
                 {
                     beginTime = new DateTime(
-                    Convert.ToInt32(BeginYear.Text),
-                    Convert.ToInt32(BeginMonth.Text),
-                    Convert.ToInt32(BeginDay.Text),
-                    Convert.ToInt32(BeginHour.Text),
-                    Convert.ToInt32(BeginMinute.Text),
-                0);
+                        Convert.ToInt32(BeginYear.Text),
+                        Convert.ToInt32(BeginMonth.Text),
+                        Convert.ToInt32(BeginDay.Text),
+                        Convert.ToInt32(BeginHour.Text),
+                        Convert.ToInt32(BeginMinute.Text),
+                    0);
                     endTime = new DateTime(
                         Convert.ToInt32(EndYear.Text),
                         Convert.ToInt32(EndMonth.Text),
@@ -114,11 +114,11 @@ namespace MasterScadaBlocks.DiffDateTimePicker
                         Convert.ToInt32(EndHour.Text),
                         Convert.ToInt32(EndMinute.Text),
                         0);
-
                     CheckboxChanged?.Invoke(this, new ChangedEventArgs(lastDay, beginTime, endTime));
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    System.Windows.Forms.MessageBox.Show(ex.Message);
                 }
             }
         }
