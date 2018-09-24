@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="MasterScadaBlocks.DiffDateTimePicker.DiffDateTimePickerWPF"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MasterScadaBlocks.DiffDateTimePicker"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Выбор промежутка времени" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <CheckBox x:Name="LastDay" Content="За последние сутки" Grid.Row="1" Checked="LastDay_Checked" Unchecked="LastDay_Unchecked" VerticalContentAlignment="Center" Margin="0"/>
+        <Grid x:Name="gridInternal" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="от" RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center"/>
+            <Label Content="до" RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Row="1"/>
+            <TextBox x:Name="BeginYear" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" KeyDown="BeginYear_KeyDown"/>
+            <TextBox x:Name="EndYear" Grid.Column="1" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" KeyDown="EndYear_KeyDown"/>
+            <TextBox x:Name="BeginMonth" Grid.Column="3" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" KeyDown="BeginMonth_KeyDown"/>
+            <Label Content="." RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Center"/>
+            <Label Content="." RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1"/>
+            <Label Content="." RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="4" HorizontalAlignment="Center"/>
+            <TextBox x:Name="EndMonth" Grid.Column="3" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,-1" Grid.Row="1" KeyDown="EndMonth_KeyDown"/>
+            <Label Content="." RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="4" HorizontalAlignment="Center" Grid.Row="1"/>
+            <TextBox x:Name="BeginDay" Grid.Column="5" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" KeyDown="BeginDay_KeyDown"/>
+            <TextBox x:Name="EndDay" Grid.Column="5" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" KeyDown="EndDay_KeyDown"/>
+            <TextBox x:Name="BeginHour" Grid.Column="7" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" KeyDown="BeginHour_KeyDown"/>
+            <TextBox x:Name="EndHour" Grid.Column="7" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" KeyDown="EndHour_KeyDown"/>
+            <Label Content=":" RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="8" HorizontalAlignment="Center"/>
+            <Label Content=":" RenderTransformOrigin="-0.009,0.306" VerticalAlignment="Center" Grid.Column="8" HorizontalAlignment="Center" Grid.Row="1"/>
+            <TextBox x:Name="BeginMinute" Grid.Column="9" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" KeyDown="BeginMinute_KeyDown"/>
+            <TextBox x:Name="EndMinute" Grid.Column="9" TextWrapping="Wrap" Text="TextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" KeyDown="EndMinute_KeyDown"/>
+        </Grid>
+    </Grid>
+</UserControl>

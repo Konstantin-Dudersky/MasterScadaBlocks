@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FBConfig>
+  <Map>
+    <Items>
+      <Pin ID="1" Name="Процент 1" Type="Вещественный"/>
+      <Pin ID="2" Name="Процент 2" Type="Вещественный"/>
+      <Pin ID="3" Name="Процент 3" Type="Вещественный"/>
+      <Pin ID="4" Name="Процент 4" Type="Вещественный"/>
+      <Pin ID="5" Name="Процент 5" Type="Вещественный"/>
+      <Pin ID="6" Name="Процент 6" Type="Вещественный"/>
+      <Pin ID="7" Name="Процент 7" Type="Вещественный"/>
+      <Pin ID="8" Name="Процент 8" Type="Вещественный"/>
+      <Pin ID="9" Name="Процент 9" Type="Вещественный"/>
+      <Pout ID="10" Name="Выход" Type="Вещественный"/>
+    </Items>
+  </Map>
+  <VisualMap>
+    <Items>
+      <Pout ID="101" Name="Процент 1" Type="Нет"/>
+      <Pout ID="102" Name="Процент 2" Type="Нет"/>
+      <Pout ID="103" Name="Процент 3" Type="Нет"/>
+      <Pout ID="104" Name="Процент 4" Type="Нет"/>
+      <Pout ID="105" Name="Процент 5" Type="Нет"/>
+      <Pout ID="106" Name="Процент 6" Type="Нет"/>
+      <Pout ID="107" Name="Процент 7" Type="Нет"/>
+      <Pout ID="108" Name="Процент 8" Type="Нет"/>
+      <Pout ID="109" Name="Процент 9" Type="Нет"/>
+    </Items>
+  </VisualMap>
+</FBConfig>

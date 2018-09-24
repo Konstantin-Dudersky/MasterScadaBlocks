@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScadaFb", "ScadaFb\ScadaFb.csproj", "{7A09ABFA-A227-4E16-AC0A-FE8911D8A8CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowTest", "FlowTest\FlowTest.csproj", "{A15FD914-7365-408E-9EC1-6280379EC334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonClass", "Common\CommonClass.csproj", "{C6AFFB45-7D3B-4C5E-BA4A-01785312FB50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A09ABFA-A227-4E16-AC0A-FE8911D8A8CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A09ABFA-A227-4E16-AC0A-FE8911D8A8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A09ABFA-A227-4E16-AC0A-FE8911D8A8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A09ABFA-A227-4E16-AC0A-FE8911D8A8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15FD914-7365-408E-9EC1-6280379EC334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15FD914-7365-408E-9EC1-6280379EC334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15FD914-7365-408E-9EC1-6280379EC334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15FD914-7365-408E-9EC1-6280379EC334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6AFFB45-7D3B-4C5E-BA4A-01785312FB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6AFFB45-7D3B-4C5E-BA4A-01785312FB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6AFFB45-7D3B-4C5E-BA4A-01785312FB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6AFFB45-7D3B-4C5E-BA4A-01785312FB50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {982DC5A1-90B6-478B-A1E0-695DE0DBCD25}
+	EndGlobalSection
+EndGlobal

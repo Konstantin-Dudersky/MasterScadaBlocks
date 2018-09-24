@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FBConfig>
+  <Map>
+    <Items>
+      <Pin ID="1" Name="Поток 1" Type="System.Double"/>
+      <Pin ID="2" Name="Поток 2" Type="System.Double"/>
+      <Pin ID="3" Name="Поток 3" Type="System.Double"/>
+      <Pin ID="4" Name="Поток 4" Type="System.Double"/>
+      <Pin ID="5" Name="Поток 5" Type="System.Double"/>
+      <Pin ID="6" Name="Поток 6" Type="System.Double"/>
+      <Pin ID="7" Name="Поток 7" Type="System.Double"/>
+      <Pin ID="8" Name="Поток 8" Type="System.Double"/>
+      <Pin ID="9" Name="Поток 9" Type="System.Double"/>
+      <Pin ID="10" Name="Поток 10" Type="System.Double"/>
+      <Pin ID="11" Name="Поток 11" Type="System.Double"/>
+      <Pin ID="12" Name="Поток 12" Type="System.Double"/>
+      <Pin ID="13" Name="Поток 13" Type="System.Double"/>
+      <Pin ID="14" Name="Поток 14" Type="System.Double"/>
+      <Pin ID="15" Name="Поток 15" Type="System.Double"/>
+      <Pin ID="16" Name="Поток 16" Type="System.Double"/>
+      <Pin ID="17" Name="Поток 17" Type="System.Double"/>
+      <Pin ID="18" Name="Поток 18" Type="System.Double"/>
+      <Pin ID="19" Name="Поток 19" Type="System.Double"/>
+      <Pin ID="20" Name="Поток 20" Type="System.Double"/>
+      <Pin ID="21" Name="Поток 21" Type="System.Double"/>
+      <Pin ID="22" Name="Поток 22" Type="System.Double"/>
+      <Pin ID="23" Name="Поток 23" Type="System.Double"/>
+      <Pin ID="24" Name="Поток 24" Type="System.Double"/>
+      <Pin ID="25" Name="Поток 25" Type="System.Double"/>
+    </Items>
+  </Map>
+  <VisualMap>
+    <Items>
+      <Pout ID="101" Type="System.Double"/>
+      <Pout ID="102" Type="System.Double"/>
+      <Pout ID="103" Type="System.Double"/>
+      <Pout ID="104" Type="System.Double"/>
+      <Pout ID="105" Type="System.Double"/>
+      <Pout ID="106" Type="System.Double"/>
+      <Pout ID="107" Type="System.Double"/>
+      <Pout ID="108" Type="System.Double"/>
+      <Pout ID="109" Type="System.Double"/>
+      <Pout ID="110" Type="System.Double"/>
+      <Pout ID="111" Type="System.Double"/>
+      <Pout ID="112" Type="System.Double"/>
+      <Pout ID="113" Type="System.Double"/>
+      <Pout ID="114" Type="System.Double"/>
+      <Pout ID="115" Type="System.Double"/>
+      <Pout ID="116" Type="System.Double"/>
+      <Pout ID="117" Type="System.Double"/>
+      <Pout ID="118" Type="System.Double"/>
+      <Pout ID="119" Type="System.Double"/>
+      <Pout ID="120" Type="System.Double"/>
+      <Pout ID="121" Type="System.Double"/>
+      <Pout ID="122" Type="System.Double"/>
+      <Pout ID="123" Type="System.Double"/>
+      <Pout ID="124" Type="System.Double"/>
+      <Pout ID="125" Type="System.Double"/>
+    </Items>
+  </VisualMap>
+</FBConfig>

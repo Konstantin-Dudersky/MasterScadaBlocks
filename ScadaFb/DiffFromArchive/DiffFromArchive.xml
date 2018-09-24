@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FBConfig>
+  <Map>
+    <Items>
+      <Pin ID="1" Name="Calculate" Type="System.Boolean" />
+      <Pin ID="2" Name="Tag" Type="Вещественный" />
+      <Pin ID="3" Name="BeginDateTime" Type="Время" />
+      <Pin ID="4" Name="EndDateTime" Type="Время" />
+      <Pin ID="5" Name="CaclulatedDiff" Type="Вещественный" />
+    </Items>
+  </Map>
+</FBConfig>

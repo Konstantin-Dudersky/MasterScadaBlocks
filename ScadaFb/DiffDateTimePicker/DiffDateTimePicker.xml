@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FBConfig>
+  <Map>
+    <Items>
+      <Pout ID="1" Name="BeginTime" Type="System.Datetime" />
+      <Pout ID="2" Name="EndTime" Type="System.Datetime" />
+    </Items>
+  </Map>
+  <VisualMap>
+    <Items>
+      <Pin ID="101" Name="BeginTime" Type="System.Datetime" />
+      <Pin ID="102" Name="EndTime" Type="System.Datetime" />
+    </Items>
+  </VisualMap>
+</FBConfig>

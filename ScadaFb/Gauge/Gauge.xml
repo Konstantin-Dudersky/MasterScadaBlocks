@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FBConfig>
+  <Map>
+    <Items>
+      <Pin ID="1" Name="Значение" Type="Вещественный"/>
+    </Items>
+  </Map>
+  <VisualMap>
+    <Items>
+      <Pout ID="101" Name="Значение" Type="Нет"/>
+    </Items>
+  </VisualMap>
+</FBConfig>

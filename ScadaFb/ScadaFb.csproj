@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A09ABFA-A227-4E16-AC0A-FE8911D8A8CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MasterScadaBlocks</RootNamespace>
+    <AssemblyName>MasterScadaBlocks</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Program Files %28x86%29\InSAT\MasterSCADA\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FB, Version=3.9.0.4402, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\InSAT\MasterSCADA\FB.dll</HintPath>
+    </Reference>
+    <Reference Include="InSAT.Library, Version=3.9.0.4402, Culture=neutral, PublicKeyToken=ba56f5ab10f997f3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\InSAT\MasterSCADA\InSAT.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Insat.Opc, Version=1.1.3.3, Culture=neutral, PublicKeyToken=2278bdb63893b34f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\InSAT\MasterSCADA\Insat.Opc.dll</HintPath>
+    </Reference>
+    <Reference Include="InternalModules, Version=3.9.0.4402, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\InSAT\MasterSCADA\InternalModules.dll</HintPath>
+    </Reference>
+    <Reference Include="MasterSCADA.Common, Version=3.9.0.4402, Culture=neutral, PublicKeyToken=ba56f5ab10f997f3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\InSAT\MasterSCADA\MasterSCADA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MasterSCADALib, Version=30.30.0.0, Culture=neutral, PublicKeyToken=ba56f5ab10f997f3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\InSAT\MasterSCADA\MasterSCADALib.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiffDateTimePicker\DiffDateTimePicker.cs" />
+    <Compile Include="DiffDateTimePicker\DiffDateTimePickerWF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiffDateTimePicker\DiffDateTimePickerWF.Designer.cs">
+      <DependentUpon>DiffDateTimePickerWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiffDateTimePicker\DiffDateTimePickerWPF.xaml.cs">
+      <DependentUpon>DiffDateTimePickerWPF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DiffFromArchive\DiffFromArchive.cs" />
+    <Compile Include="Flow\Flow.cs" />
+    <Compile Include="Flow\FlowWF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\FlowWF.Designer.cs">
+      <DependentUpon>FlowWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\FlowWPF.xaml.cs">
+      <DependentUpon>FlowWPF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\Node.cs" />
+    <Compile Include="Flow\NodeCollection.cs" />
+    <Compile Include="Flow\NodeLink.cs" />
+    <Compile Include="Gauge\Gauge.cs" />
+    <Compile Include="Gauge\GaugeData.cs" />
+    <Compile Include="Gauge\GaugeWF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gauge\GaugeWF.Designer.cs">
+      <DependentUpon>GaugeWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauge\GaugeWPF.xaml.cs">
+      <DependentUpon>GaugeWPF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pie\DiagItem.cs" />
+    <Compile Include="Pie\DiagItemCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pie\Pie.cs" />
+    <Compile Include="Pie\PieWF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pie\PieWF.Designer.cs">
+      <DependentUpon>PieWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pie\PieWPF.xaml.cs">
+      <DependentUpon>PieWPF.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pie\Pie.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pie\PieWF.resx">
+      <DependentUpon>PieWF.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pie\Pie.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DiffDateTimePicker\DiffDateTimePickerWPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Flow\FlowWPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauge\GaugeWPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pie\PieWPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gauge\Gauge.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gauge\Gauge.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Flow\Flow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Flow\Flow.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\CommonClass.csproj">
+      <Project>{c6affb45-7d3b-4c5e-ba4a-01785312fb50}</Project>
+      <Name>CommonClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DiffFromArchive\DiffFromArchive.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DiffFromArchive\DiffFromArchive.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DiffDateTimePicker\DiffDateTimePicker.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DiffDateTimePicker\DiffDateTimePicker.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
