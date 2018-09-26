@@ -1,4 +1,5 @@
 ﻿using MasterScadaBlocksCommon;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -8,6 +9,12 @@ namespace MasterScadaBlocks.Flow
 {
     public class Node
     {
+        #region Private Fields
+
+        private const int MINLABELHEIGHT = 16;
+
+        #endregion Private Fields
+
         #region Public Constructors
 
         public Node(string name, Color color)
@@ -74,13 +81,13 @@ namespace MasterScadaBlocks.Flow
             // подпись
             canvas.Children.Add(new Label()
             {
-                Content = $"{Name}\n{ValuePercent:f1} %",
+                Content = SizeHeight < MINLABELHEIGHT ? $"{Name} ({ValuePercent:f1} %)" : $"{Name}\n{ValuePercent:f1} %",
                 FontWeight = FontWeights.Bold,
                 Foreground = new SolidColorBrush(ColorDarker),
-                Height = SizeHeight,
+                Height = Math.Max(SizeHeight, MINLABELHEIGHT),
                 Margin = new Thickness(MarginLeft + SizeWidth + 2, MarginTop, 0, 0),
                 Padding = new Thickness(0),
-                VerticalContentAlignment = VerticalAlignment.Center,
+                VerticalContentAlignment = SizeHeight < MINLABELHEIGHT ? VerticalAlignment.Top : VerticalAlignment.Center,
             });
         }
 

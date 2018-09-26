@@ -19,8 +19,6 @@ namespace MasterScadaBlocks.DiffFromArchive
 
         private const int PinBeginDateTime = 91;
         private const int PinEndDateTime = 92;
-        private const int PinTag_1 = 1;
-        private const int PoutCaclulatedDiff_1 = 101;
 
         #endregion Private Fields
 
@@ -79,9 +77,9 @@ namespace MasterScadaBlocks.DiffFromArchive
 
             if (pinID == PinBeginDateTime)
             {
-                for (int i = 1; i < 31; i++)
+                for (int i = 1; i < 51; i++)
                 {
-                    CalculateDiff(PinBeginDateTime, PinEndDateTime, i, 100 + 1);
+                    CalculateDiff(PinBeginDateTime, PinEndDateTime, i, 100 + i);
                 }
             }
         }

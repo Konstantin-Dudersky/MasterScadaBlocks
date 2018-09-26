@@ -35,6 +35,26 @@
       <Pin ID="28" Name="Tag_28" Type="System.Double" />
       <Pin ID="29" Name="Tag_29" Type="System.Double" />
       <Pin ID="30" Name="Tag_30" Type="System.Double" />
+      <Pin ID="31" Name="Tag_31" Type="System.Double" />
+      <Pin ID="32" Name="Tag_32" Type="System.Double" />
+      <Pin ID="33" Name="Tag_33" Type="System.Double" />
+      <Pin ID="34" Name="Tag_34" Type="System.Double" />
+      <Pin ID="35" Name="Tag_35" Type="System.Double" />
+      <Pin ID="36" Name="Tag_36" Type="System.Double" />
+      <Pin ID="37" Name="Tag_37" Type="System.Double" />
+      <Pin ID="38" Name="Tag_38" Type="System.Double" />
+      <Pin ID="39" Name="Tag_39" Type="System.Double" />
+      <Pin ID="40" Name="Tag_40" Type="System.Double" />
+      <Pin ID="41" Name="Tag_41" Type="System.Double" />
+      <Pin ID="42" Name="Tag_42" Type="System.Double" />
+      <Pin ID="43" Name="Tag_43" Type="System.Double" />
+      <Pin ID="44" Name="Tag_44" Type="System.Double" />
+      <Pin ID="45" Name="Tag_45" Type="System.Double" />
+      <Pin ID="46" Name="Tag_46" Type="System.Double" />
+      <Pin ID="47" Name="Tag_47" Type="System.Double" />
+      <Pin ID="48" Name="Tag_48" Type="System.Double" />
+      <Pin ID="49" Name="Tag_49" Type="System.Double" />
+      <Pin ID="50" Name="Tag_50" Type="System.Double" />
       <Pout ID="101" Name="CaclulatedDiff_1" Type="System.Double" />
       <Pout ID="102" Name="CaclulatedDiff_2" Type="System.Double" />
       <Pout ID="103" Name="CaclulatedDiff_3" Type="System.Double" />
@@ -65,6 +85,26 @@
       <Pout ID="128" Name="CaclulatedDiff_28" Type="System.Double" />
       <Pout ID="129" Name="CaclulatedDiff_29" Type="System.Double" />
       <Pout ID="130" Name="CaclulatedDiff_30" Type="System.Double" />
+      <Pout ID="131" Name="CaclulatedDiff_31" Type="System.Double" />
+      <Pout ID="132" Name="CaclulatedDiff_32" Type="System.Double" />
+      <Pout ID="133" Name="CaclulatedDiff_33" Type="System.Double" />
+      <Pout ID="134" Name="CaclulatedDiff_34" Type="System.Double" />
+      <Pout ID="135" Name="CaclulatedDiff_35" Type="System.Double" />
+      <Pout ID="136" Name="CaclulatedDiff_36" Type="System.Double" />
+      <Pout ID="137" Name="CaclulatedDiff_37" Type="System.Double" />
+      <Pout ID="138" Name="CaclulatedDiff_38" Type="System.Double" />
+      <Pout ID="139" Name="CaclulatedDiff_39" Type="System.Double" />
+      <Pout ID="140" Name="CaclulatedDiff_40" Type="System.Double" />
+      <Pout ID="141" Name="CaclulatedDiff_41" Type="System.Double" />
+      <Pout ID="142" Name="CaclulatedDiff_42" Type="System.Double" />
+      <Pout ID="143" Name="CaclulatedDiff_43" Type="System.Double" />
+      <Pout ID="144" Name="CaclulatedDiff_44" Type="System.Double" />
+      <Pout ID="145" Name="CaclulatedDiff_45" Type="System.Double" />
+      <Pout ID="146" Name="CaclulatedDiff_46" Type="System.Double" />
+      <Pout ID="147" Name="CaclulatedDiff_47" Type="System.Double" />
+      <Pout ID="148" Name="CaclulatedDiff_48" Type="System.Double" />
+      <Pout ID="149" Name="CaclulatedDiff_49" Type="System.Double" />
+      <Pout ID="150" Name="CaclulatedDiff_50" Type="System.Double" />
     </Items>
   </Map>
 </FBConfig>

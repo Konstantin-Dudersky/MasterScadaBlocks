@@ -40,7 +40,7 @@ namespace MasterScadaBlocks.DiffDateTimePicker
 
             timer = new DispatcherTimer
             {
-                Interval = new TimeSpan(0, 0, 0, 10, 0),
+                Interval = new TimeSpan(0, 0, 0, 30, 0),
             };
             timer.Tick += Timer_Tick;
 

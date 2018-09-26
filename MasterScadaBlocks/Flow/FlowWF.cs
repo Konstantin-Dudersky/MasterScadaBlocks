@@ -16,7 +16,7 @@ namespace MasterScadaBlocks.Flow
     public partial class FlowWF : VisualControlBase
     {
         #region Private Fields
-
+       
         private FlowWPF _controlWpf;
         private NodeCollection data = null;
         private DispatcherTimer timer = null;
@@ -305,40 +305,40 @@ namespace MasterScadaBlocks.Flow
 
             timer = new DispatcherTimer()
             {
-                Interval = TimeSpan.FromSeconds(2),
+                Interval = TimeSpan.FromSeconds(3),
             };
             timer.Tick += Timer_Tick;
 
             FBConnector.PinChanged += FBConnector_PinChanged;
 
-            data = new NodeCollection();
+            //data = new NodeCollection();
 
-            data.AddNode(0, "Net supply", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi0));
-            data.AddNode(1, "PV", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi1));
-            data.AddNode(2, "Factory", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi2));
-            data.AddNode(3, "Utilities", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi3));
-            data.AddNode(4, "Admin Building", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi4));
-            data.AddNode(5, "Production", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi5));
-            data.AddNode(6, "Packaging", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi6));
-            data.AddNode(7, "Compressor", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi7));
-            data.AddNode(8, "HVAC", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi8));
-            data.AddNode(9, "Boiler", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi9));
+            //data.AddNode(0, "Net supply", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi0));
+            //data.AddNode(1, "PV", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi1));
+            //data.AddNode(2, "Factory", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi2));
+            //data.AddNode(3, "Utilities", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi3));
+            //data.AddNode(4, "Admin Building", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi4));
+            //data.AddNode(5, "Production", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi5));
+            //data.AddNode(6, "Packaging", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi6));
+            //data.AddNode(7, "Compressor", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi7));
+            //data.AddNode(8, "HVAC", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi8));
+            //data.AddNode(9, "Boiler", (Color)ColorConverter.ConvertFromString(CommonClass.ColorPowerBi9));
 
-            data.AddNodeLink(0, 4, 3185);
-            data.AddNodeLink(0, 2, 57426);
-            data.AddNodeLink(0, 3, 4259);
-            data.AddNodeLink(1, 2, 2544);
-            data.AddNodeLink(2, 5, 42322);
-            data.AddNodeLink(2, 6, 15104);
-            data.AddNodeLink(3, 7, 704);
-            data.AddNodeLink(3, 8, 2316);
-            data.AddNodeLink(3, 9, 1239);
+            //data.AddNodeLink(0, 4, 3185);
+            //data.AddNodeLink(0, 2, 57426);
+            //data.AddNodeLink(0, 3, 4259);
+            //data.AddNodeLink(1, 2, 2544);
+            //data.AddNodeLink(2, 5, 42322);
+            //data.AddNodeLink(2, 6, 15104);
+            //data.AddNodeLink(3, 7, 704);
+            //data.AddNodeLink(3, 8, 2316);
+            //data.AddNodeLink(3, 9, 1239);
 
-            data.AddLevels(0, "1 2");
-            data.AddLevels(1, "3 4");
-            data.AddLevels(2, "5 6 7 8 9 10");
+            //data.AddLevels(0, "1 2");
+            //data.AddLevels(1, "3 4");
+            //data.AddLevels(2, "5 6 7 8 9 10");
 
-            data.Paint(_controlWpf.canvas);
+            //data.Paint(_controlWpf.canvas);
         }
 
         private void FBConnector_PinChanged(int pinID)
@@ -357,6 +357,11 @@ namespace MasterScadaBlocks.Flow
                 updateLocked = true;
                 timer.Start();
             }
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            updateLocked = false;
 
             data = new NodeCollection();
 
@@ -420,11 +425,6 @@ namespace MasterScadaBlocks.Flow
             data.AddLevels(5, Level5);
 
             data.Paint(_controlWpf.canvas);
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            updateLocked = false;
         }
 
         #endregion Private Methods
